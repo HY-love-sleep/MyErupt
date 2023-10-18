@@ -3,6 +3,11 @@ spring:
     url: jdbc:mysql://43.138.86.62:3306/erupt?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: root
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
   jpa:
     show-sql: true
     generate-ddl: true
