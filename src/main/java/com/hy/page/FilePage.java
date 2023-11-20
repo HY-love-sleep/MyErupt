@@ -54,4 +54,16 @@ public class FilePage extends BaseModel {
         )
         private Date date;
 
+        @EruptField(
+                views = @View(
+                        title = "上传用户"
+                ),
+                edit = @Edit(
+                        title = "上传用户",
+                        type = EditType.INPUT, search = @Search, notNull = true,
+                        inputType = @InputType
+                )
+        )
+        private String uploadUser;
+
 }
