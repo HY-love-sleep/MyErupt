@@ -44,6 +44,42 @@ public class FilePage extends BaseModel {
 
         @EruptField(
                 views = @View(
+                        title = "项目"
+                ),
+                edit = @Edit(
+                        title = "项目",
+                        type = EditType.INPUT, search = @Search,
+                        inputType = @InputType
+                )
+        )
+        private String project;
+
+        @EruptField(
+                views = @View(
+                        title = "版本"
+                ),
+                edit = @Edit(
+                        title = "版本",
+                        type = EditType.INPUT, search = @Search,
+                        inputType = @InputType
+                )
+        )
+        private String jarVersion;
+
+        @EruptField(
+                views = @View(
+                        title = "前后端"
+                ),
+                edit = @Edit(
+                        title = "前后端",
+                        type = EditType.INPUT, search = @Search,
+                        inputType = @InputType
+                )
+        )
+        private String webOrBack;
+
+        @EruptField(
+                views = @View(
                         title = "日期", sortable = true
                 ),
                 edit = @Edit(
